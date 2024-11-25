@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: #008BCA;
+    width: 100%;
+    max-width: 1366px;
+    padding: 30px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+header h1{
+    color: #fff;
+}
+.menu-horizontal{
+    list-style: none;
+}
+.menu-horizontal li{
+    float: left;
+    padding-right: 40px;
+}
+.menu-horizontal li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+#sobre {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 70px;
+    height: auto;
+}
+
+#sobre img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#sobre h2 {
+    margin-top: 0; 
+    margin-bottom: 10px; 
+    align-self: flex-start;
+    color: #008CBA;
+    border-bottom: 2px solid #008CBA;
+}
+
+#sobre p {
+    line-height: 1.6;
+    align-items: center;
+    text-align: left;
+    margin-top: 100px;
+}
+.produtos main > h2{
+    margin-top: 0; 
+    margin-bottom: 10px; 
+    align-self: flex-start;
+    color: #008CBA;
+    border-bottom: 2px solid #008CBA;
+}
+.produto h2{
+    margin-top: 0; 
+    margin-bottom: 10px; 
+    align-self: flex-start;
+    color: #008CBA;
+}
+footer{
+    background-color: #008CDE;
+    color: #fff;
+    padding: 40px;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+.clear{
+    content:"";
+    clear: both;
+    display: table;
+}
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    margin-right: 12px;
+}
+.conteudo h2{
+    margin-top: 0; 
+    margin-bottom: 10px; 
+    align-self: flex-start;
+    color: #008CBA;
+    border-bottom: 2px solid #008CBA;
+}
+button{
+    width: 95%;
+    height: 40px;
+    background-color: #008CBA;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+.produtos{
+    margin: 80px;
+}
+
+@media screen and (max-width: 1225px){
+    .container{
+        width: 50%;
+        
+    }
+    div.container{
+        float:left;
+    }
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 32.6%);
+        margin-right: 15px;
+    }
+    .produtos img{
+        margin: 50px;
+    }
+    #sobre img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: block; 
+        margin-bottom: 20px;
+    }
+
+    #sobre h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #008CBA;
+        border-bottom: 2px solid #008CBA;   
+    }
+
+    #sobre p {
+        line-height: 1.6;
+        text-align: left;
+    }
+     .conteudo{
+        display: flex;
+        text-align: center;
+        float: right;
+        width: 50%;
+        justify-content: flex-start;
+        display: flex;
+  flex-wrap: wrap; 
+  gap: 16px;
+      
+    }
+    .conteudo main section{
+        margin-left: 25px;
+        margin-top: -40px;
+        top: 0;
+        float: right;
+    }
+    .main-container{
+        float: left;
+        width: 100%;
+        display:flow-root;
+        display: block; 
+        justify-content: space-between;
+        align-items: flex-start;    
+    }
+    #sobre {
+        display: block;
+        justify-content: space-between;
+        float: left;
+        height: auto;
+        padding: 0;
+    }
+    .produto img{
+        width: 180px;
+        margin-right: 80px;
+    }
+
+}
+@media (max-width:640px){
+    .produto h3{
+    width: 180px;
+    font-size: 1em;
+}
+    div.produtos{
+        padding: 0;
+        margin: 0;
+    }
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(1, 32.6%);
+        margin-top: 50px;
+    }
+    .produtos img{
+        margin: 0;
+    }
+    header{
+        align-items: center;
+        width: 200%;
+    }
+    .container{
+        width: 50%;
+        
+    }
+    div.container{
+        float:left;
+    }
+    section#sobre{
+        margin: 0;
+        padding: 0;
+    }
+    #sobre img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: block; 
+        margin-bottom: 20px;
+    }
+
+    #sobre h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #008CBA;
+        border-bottom: 2px solid #008CBA;
+    }
+
+    #sobre p {
+        line-height: 1.6;
+        text-align: left;
+    }
+     .conteudo{
+        display: flex;
+        text-align: center;
+        float: right;
+        width: 50%;
+        justify-content: flex-start;
+        display: flex;
+  flex-wrap: wrap; 
+  gap: 16px;
+      
+    }
+    .conteudo main section{
+        margin-left: 25px;
+        margin-top: 20px;
+        top: 0;
+        float: right;
+    }
+    .main-container{
+        float: left;
+        width: 100%;
+        display:flow-root;
+        display: block; 
+        justify-content: space-between;
+        align-items: flex-start;    
+    }
+    #sobre {
+        display: block;
+        justify-content: space-between;
+        float: left;
+        margin: 10px;
+    }
+    .produto img{
+        width: 150px;
+
+    }
+    .conteudo main section h2{
+        text-align: left;
+    }
+    #sobre img{
+        width: 200px;
+    }
+    .produto img{
+        width: 200px;
+        margin-left: -12px;
+    }
+    .conteudo main section{
+        padding: 0;
+        margin: 0;
+    }
+}
